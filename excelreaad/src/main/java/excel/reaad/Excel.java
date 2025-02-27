@@ -16,9 +16,9 @@ public class Excel
 
     public static FileInputStream f;
 
-public static String readStringData(int i,int j) throws IOException {
+public static String readStringData(int i,int j)throws IOException {
 
-f= new FileInputStream("C:\\nithya\\excelreaad\\src\\main\\resources\\Student.xlsx");
+f= new FileInputStream("C:\\Users\\nithya.nair\\git\\excelread\\excelreaad\\src\\main\\resources\\Student.xlsx");
  w= new XSSFWorkbook(f);
 
       s= w.getSheet("Sheet1");
@@ -32,7 +32,7 @@ return c.getStringCellValue();
 public static String readIntegerData(int i,int j) throws IOException
 {
 
-						f= new FileInputStream("C:\\nithya\\excelreaad\\src\\main\\resources\\Student.xlsx");
+						f= new FileInputStream("C:\\Users\\nithya.nair\\git\\excelread\\excelreaad\\src\\main\\resources\\Student.xlsx");
                       w= new XSSFWorkbook(f);
                       s= w.getSheet("Sheet1");
                       Row r=s.getRow(i);
